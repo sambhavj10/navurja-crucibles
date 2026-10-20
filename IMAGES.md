@@ -4,21 +4,18 @@ This site currently uses placeholder graphics so nothing renders broken. Replace
 with real crucible photos whenever you're ready. All image assets live in `attached_assets/`
 and are referenced through the `@assets/...` import alias.
 
-## Product card images (Products section)
-Replace these three SVG placeholders with real product photos (JPG/PNG is fine).
-Recommended size: ~640×360 (16:9), landscape.
+## Product card images (Products section) — DONE (real photos in place)
+These three cards now use real product photos in `attached_assets/`:
 
-| Placeholder file (in `attached_assets/`) | Product card | How to swap |
-|---|---|---|
-| `crucible-ptype.svg` | P-Type CZ Quartz Crucibles | Add your photo, then edit the import in `client/src/components/Products.tsx` |
-| `crucible-ntype.svg` | N-Type Bubble-Free Crucibles | same |
-| `crucible-g12.svg`   | G12 Large-Format Crucibles | same |
+| File | Product card |
+|---|---|
+| `crucible-cz.png`     | High-Purity Fused Quartz Czochralski Crucibles |
+| `crucible-opaque.png` | Opaque Fused Quartz Crucibles |
+| `crucible-lab.webp`   | Cylindrical Transparent Quartz Crucibles |
 
-To swap, drop e.g. `ptype.jpg` into `attached_assets/` and change the import at the top of
-`client/src/components/Products.tsx`:
-```ts
-import pTypeImage from '@assets/ptype.jpg';   // was crucible-ptype.svg
-```
+To replace any of them, drop a new file into `attached_assets/` and update the matching
+import at the top of `client/src/components/Products.tsx`. Recommended ~640×360 (16:9) or
+square (the card crops to 16:9).
 
 ## Hero background (Hero section)
 The hero uses a dark gradient (no photo). To use a real photo — e.g. a CZ furnace or a

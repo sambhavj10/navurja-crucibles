@@ -1,55 +1,54 @@
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { FileText } from 'lucide-react';
-// Placeholder product images — replace these SVGs with real crucible photos (see IMAGES.md)
-import pTypeImage from '@assets/crucible-ptype.svg';
-import nTypeImage from '@assets/crucible-ntype.svg';
-import g12Image from '@assets/crucible-g12.svg';
+import czImage from '@assets/crucible-cz.png';
+import opaqueImage from '@assets/crucible-opaque.png';
+import labImage from '@assets/crucible-lab.webp';
 
 export default function Products() {
 
   const products = [
     {
-      id: 'p-type-crucible',
-      title: 'P-Type CZ Quartz Crucibles',
-      subtitle: 'Standard fused quartz for P-type monocrystalline silicon ingots',
+      id: 'cz-crucible',
+      title: 'High-Purity Fused Quartz Czochralski Crucibles',
+      subtitle: 'For monocrystalline silicon growth (CZ process)',
       description: '',
-      image: pTypeImage,
+      image: czImage,
       features: [
-        'Sizes: 20" to 32" diameter',
+        'Sizes: 14" to 40" diameter',
         'Purity: SiO₂ ≥ 99.99%',
-        'Three-layer wall: bubble-free transparent inner liner',
+        'Three-layer wall: bubble-free transparent inner, opaque insulating outer',
         'Service temperature up to ~1600 °C'
       ],
       ctaText: 'Request Datasheet',
       ctaIcon: <FileText className="w-4 h-4" />
     },
     {
-      id: 'n-type-crucible',
-      title: 'N-Type Bubble-Free Crucibles',
-      subtitle: 'Synthetic ultra-pure inner liner for TOPCon & HJT N-type ingots',
+      id: 'opaque-crucible',
+      title: 'Opaque Fused Quartz Crucibles',
+      subtitle: 'For material melting & high-temperature testing',
       description: '',
-      image: nTypeImage,
+      image: opaqueImage,
       features: [
-        'Ultra-low bubble & OH content',
-        'Low metallic impurity for high crystal yield',
-        'Extended CZ run life',
-        'Engineered for next-gen N-type cells'
+        'Opaque milky wall for uniform heating & thermal insulation',
+        'Working temperature up to ~1200 °C (softening ~1650 °C)',
+        'Excellent thermal-shock resistance',
+        'Custom shapes & sizes available'
       ],
       ctaText: 'Request Datasheet',
       ctaIcon: <FileText className="w-4 h-4" />
     },
     {
-      id: 'g12-crucible',
-      title: 'G12 Large-Format Crucibles',
-      subtitle: '28" to 40" for G12 / G12R large-wafer ingot pulling',
+      id: 'lab-crucible',
+      title: 'Cylindrical Transparent Quartz Crucibles',
+      subtitle: 'For laboratory & material analysis',
       description: '',
-      image: g12Image,
+      image: labImage,
       features: [
-        'High dimensional precision',
-        'Optional silicon nitride (Si₃N₄) coating',
-        'Superior high-temperature stability',
-        'Consistent wall thickness & geometry'
+        'High transparency, high-purity fused silica',
+        'Continuous working temperature up to ~1100 °C',
+        'Chemical inertness & low thermal expansion',
+        'Custom diameters, heights & optional lid'
       ],
       ctaText: 'Request Datasheet',
       ctaIcon: <FileText className="w-4 h-4" />
